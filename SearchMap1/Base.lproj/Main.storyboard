@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SearchMap1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FzN-Ky-45t">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlG-mH-ftF">
+                                <rect key="frame" x="145" y="457" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.29498784649999998" green="0.95018544819999995" blue="0.26822735599999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="旅馆">
+                                    <color key="titleColor" red="1" green="0.61567187710000004" blue="0.44143256520000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0e-NF-E7S">
+                                <rect key="frame" x="145" y="457" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.3307405625" green="0.54005112769999997" blue="0.95018544819999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="超市">
+                                    <color key="titleColor" red="1" green="0.61567187710000004" blue="0.44143256520000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrN-YM-1gZ">
+                                <rect key="frame" x="140" y="508" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Be6-qm-rra"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="DCi-k3-sEc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="O3z-4R-fAQ"/>
+                                    <constraint firstAttribute="width" constant="40" id="dFr-xo-esW"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="1.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIA-bO-hQP">
+                                <rect key="frame" x="145" y="457" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.15213210084908313" green="0.95018544819999995" blue="0.82818619943144778" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="医院">
+                                    <color key="titleColor" red="1" green="0.61567187710000004" blue="0.44143256520000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FzN-Ky-45t" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0TN-GG-BY8"/>
+                            <constraint firstItem="D0e-NF-E7S" firstAttribute="firstBaseline" secondItem="BlG-mH-ftF" secondAttribute="baseline" id="2Z1-7Q-epm"/>
+                            <constraint firstItem="D0e-NF-E7S" firstAttribute="baseline" secondItem="BlG-mH-ftF" secondAttribute="firstBaseline" id="4CJ-lO-68K"/>
+                            <constraint firstItem="D0e-NF-E7S" firstAttribute="bottom" secondItem="ZIA-bO-hQP" secondAttribute="bottom" id="6xA-s8-Wxk"/>
+                            <constraint firstItem="FzN-Ky-45t" firstAttribute="centerX" secondItem="ZIA-bO-hQP" secondAttribute="centerX" id="O0J-p9-bqP"/>
+                            <constraint firstItem="D0e-NF-E7S" firstAttribute="top" secondItem="ZIA-bO-hQP" secondAttribute="top" id="RGf-kL-ogZ"/>
+                            <constraint firstItem="D0e-NF-E7S" firstAttribute="baseline" secondItem="BlG-mH-ftF" secondAttribute="baseline" id="Ukp-C2-Iv6"/>
+                            <constraint firstItem="D0e-NF-E7S" firstAttribute="bottom" secondItem="BlG-mH-ftF" secondAttribute="bottom" id="VPg-Oc-qqB"/>
+                            <constraint firstItem="FzN-Ky-45t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VQL-mI-cS2"/>
+                            <constraint firstItem="xrN-YM-1gZ" firstAttribute="top" secondItem="BlG-mH-ftF" secondAttribute="bottom" constant="21" id="Wkb-lS-TeW"/>
+                            <constraint firstItem="D0e-NF-E7S" firstAttribute="top" secondItem="BlG-mH-ftF" secondAttribute="top" id="aOk-tE-1f8"/>
+                            <constraint firstItem="D0e-NF-E7S" firstAttribute="centerX" secondItem="xrN-YM-1gZ" secondAttribute="centerX" id="bDY-Wc-f8j"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xrN-YM-1gZ" secondAttribute="bottom" constant="20" id="cHV-N3-quo"/>
+                            <constraint firstItem="D0e-NF-E7S" firstAttribute="leading" secondItem="ZIA-bO-hQP" secondAttribute="leading" id="dwx-fP-utZ"/>
+                            <constraint firstItem="D0e-NF-E7S" firstAttribute="leading" secondItem="BlG-mH-ftF" secondAttribute="leading" id="end-uR-C1L"/>
+                            <constraint firstItem="D0e-NF-E7S" firstAttribute="baseline" secondItem="ZIA-bO-hQP" secondAttribute="firstBaseline" id="mFg-K9-9GE"/>
+                            <constraint firstItem="D0e-NF-E7S" firstAttribute="baseline" secondItem="ZIA-bO-hQP" secondAttribute="baseline" id="ndJ-tL-QcV"/>
+                            <constraint firstItem="xrN-YM-1gZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rtj-2W-sck"/>
+                            <constraint firstItem="FzN-Ky-45t" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="vV6-mI-tyJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Button_Hospital" destination="ZIA-bO-hQP" id="XYn-HQ-Ev7"/>
+                        <outlet property="Button_Hotel" destination="BlG-mH-ftF" id="hVv-YB-nGw"/>
+                        <outlet property="Button_SM" destination="D0e-NF-E7S" id="Tcr-Z0-Tvj"/>
+                        <outlet property="Button_btn" destination="xrN-YM-1gZ" id="Nbn-Yn-TQw"/>
+                        <outlet property="MapView" destination="FzN-Ky-45t" id="P73-vZ-8V1"/>
+                        <outlet property="mapView" destination="FzN-Ky-45t" id="7IS-Td-YX9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216" y="452"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.png" width="512" height="512"/>
+    </resources>
+</document>
